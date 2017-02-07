@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game Explore</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/keyframes.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/media.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.ico">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="innerWrap">
+            <header>
+                <section id="mainPart">
+                    <div id="phone">
+                        <div id="phonemenu">
+                            <img id="phonemenuImg" src="../../Images/menu.png" alt="menu" onclick="if (!isMenuSlided) {slideRight()} else {slideLeft()}">
+                            <p>Home</p>
+                        </div>
+                        <nav id="sidemenu">
+                            <ul>
+                                <li><a class="sidemenulink" href="">Home</a></li>
+                                <li><a class="sidemenulink" href="">About</a>
+                                    <div class="sidemenulink"><img src="../../Images/moreinfo.png" alt="moreinfo"></div>
+                                </li>
+                                <li><a class="sidemenulink" href="">Most popular</a></li>
+                                <li><a class="sidemenulink" href="">News</a></li>
+                                <li><a class="sidemenulink" href="">Contacts</a></li>
+                            </ul>
+                        </nav>
+                        <div id="searchbar">
+                            <form action="">
+                                <input type="text" id="search" placeholder="Search..."></input><span></span>
+                            </form>
+                            <h1>GAMES</h1>
+                        </div>
+                    </div>
+                    <div id="tabletPC">
+                        <div>
+                            <h1>GAMES</h1>
+                        </div>
+                        <div id="menuWrap">
+                            <nav id="flatmenu">
+                                <ul>
+                                    <li><a class="current" href="">Home</a></li>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Most popular</a></li>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="">Contacts</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="searchPC">
+                            <div id="searchIcon" onclick="tabletPCForm()">
+                                <div></div>
+                            </div>
+                            <div id="searchInput">
+                                <form action="">
+                                    <input id="inputForSearchPC" tabindex="-1" type="text" placeholder="Search..."><span onclick="tabletPCForm()"></span>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section id="secondNav">
+                    <nav>
+                        <ul>
+                            <li><a href="">PC GAMES</a></li>
+                            <li><a href="">CONSOLE GAMES</a></li>
+                            <li><a href="">VR GAMES</a></li>
+                            <li><a href="">FREE TO PLAY</a></li>
+                            <li><a href="">BUY TO PLAY</a></li>
+                            <li><a href="">WITH MONTHLY FEE</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </header>
+            <main>
+                <section>
+                    <div id="slideshow">
+                        <h2 id="slideShowHeader">No new Games</h2>
+                        <p class='softfont' id="slideShowParagraph">...</p>
+                        <button id="slideShowButton1">LEARN MORE</button>
+                        <button id="slideShowButton2">WATCH TRAILER</button>
+                        <div id="slides">
+                            <div id="slide1">
+                                <div class="slidesImg" onclick="window.clearInterval(interval); index = 0; changeSlide(); interval = setInterval(changeSlide, 10000);"></div>
+                            </div>
+                            <div id="slide2">
+                                <div class="slidesImg" onclick="window.clearInterval(interval); index = 1; changeSlide(); interval = setInterval(changeSlide, 10000);"></div>
+                            </div>
+                            <div id="slide3">
+                                <div class="slidesImg" onclick="window.clearInterval(interval); index = 2; changeSlide(); interval = setInterval(changeSlide, 10000);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="vids">
+                    <article>
+                        <h2>Watch gameplays of your favorite games</h2>
+                        <p class='softfont'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quasi, at error, quibusdam delectus
+                            vel beatae, ipsam sint incidunt veniam pariatur ullam velit ab eligendi debitis perspiciatis
+                            laborum iure dolore.</p>
+                    </article>
+                    <div id="genre">
+                        <form action="">
+                            <div class="genreList">
+                                <input type="checkbox" name="genre" id="genre1" value="Action"><label for="genre1"><span></span>Action</label>
+                                <input type="checkbox" name="genre" id="genre2" value="Adventure"><label for="genre2"><span></span>Adventure</label>
+                                <input type="checkbox" name="genre" id="genre3" value="FPS"><label for="genre3"><span></span>FPS</label>
+                                <input type="checkbox" name="genre" id="genre4" value="RPG"><label for="genre4"><span></span>RPG</label>
+                                <input type="checkbox" name="genre" id="genre5" value="MMORPG"><label for="genre5"><span></span>MMORPG</label>
+                                <input type="checkbox" name="genre" id="genre6" value="Sandbox"><label for="genre6"><span></span>Sandbox</label>
+                                <input type="checkbox" name="genre" id="genre7" value="Multiplayer"><label for="genre7"><span></span>Multiplayer</label>
+                            </div>
+                            <div class="genreList">
+                                <input type="checkbox" name="genre" id="genre8" value="Racer"><label for="genre8"><span></span>Racer</label>
+                                <input type="checkbox" name="genre" id="genre9" value="Platformer"><label for="genre9"><span></span>Platformer</label>
+                                <input type="checkbox" name="genre" id="genre10" value="Fighting"><label for="genre10"><span></span>Fighting</label>
+                                <input type="checkbox" name="genre" id="genre11" value="Story Driven"><label for="genre11"><span></span>Story Driven</label>
+                                <input type="checkbox" name="genre" id="genre12" value="Movie-like"><label for="genre12"><span></span>Movie-like</label>
+                                <input type="checkbox" name="genre" id="genre13" value="Japanese"><label for="genre13"><span></span>Japanese</label>
+                                <input type="checkbox" name="genre" id="genre14" value="Sci-fi"><label for="genre14"><span></span>Sci-fi</label>
+                            </div>
+                            <div class="genreList">
+                                <input type="checkbox" name="genre" id="genre15" value="Steampunk"><label for="genre15"><span></span>Steampunk</label>
+                                <input type="checkbox" name="genre" id="genre16" value="Simulator"><label for="genre16"><span></span>Simulator</label>
+                                <input type="checkbox" name="genre" id="genre17" value="Hot seat"><label for="genre17"><span></span>Hot seat</label>
+                                <input type="checkbox" name="genre" id="genre18" value="Puzzle"><label for="genre18"><span></span>Puzzle</label>
+                                <input type="checkbox" name="genre" id="genre19" value="Open World"><label for="genre19"><span></span>Open World</label>
+                                <input type="checkbox" name="genre" id="genre20" value="Slasher"><label for="genre20"><span></span>Slasher</label>
+                                <input type="checkbox" name="genre" id="genre21" value="Casual"><label for="genre21"><span></span>Casual</label>
+                            </div>
+                            <div class="genreList">
+                                <input type="checkbox" name="genre" id="genre22" value="Superhero"><label for="genre22"><span></span>Superhero</label>
+                                <input type="checkbox" name="genre" id="genre23" value="2D"><label for="genre23"><span></span>2D</label>
+                                <input type="checkbox" name="genre" id="genre24" value="3D"><label for="genre24"><span></span>3D</label>
+                                <input type="checkbox" name="genre" id="genre25" value="Mixed"><label for="genre25"><span></span>Mixed</label>
+                            </div>
+
+                            <div>
+                                <button type="submit">SEARCH</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+                <section id="theGallery">
+                    <h2>More games</h2>
+
+
+                    <div id="gameGallery">
+
+                        <script>
+                        var images = [
+                            ['21', '1:23:40', '22', 'Street Figter', '2000', '../../Images/streetfighter.jpg'],
+                            ['21', '1:23:40', '22', 'Assassin&#39;s Creed', '2000', '../../Images/ac.jpg'],
+                            ['21', '1:23:40', '22', 'Chivalry Medieval Warfare', '2000', '../../Images/chivalry.jpg'],
+                            ['21', '1:23:40', '22', 'Star Craft II', '2000', '../../Images/sc.jpg'],
+                            ['21', '1:23:40', '22', 'World Of Warcraft', '2000', '../../Images/wow.jpg'],
+                            ['21', '1:23:40', '22', 'Far Cry: Primal', '2000', '../../Images/farcry.jpg'],
+                            ['21', '1:23:40', '22', 'Life Is Strange', '2000', '../../Images/lifeisstrange.jpg'],
+                            ['21', '1:23:40', '22', 'The Elder Scrolls: Skyrim', '2000', '../../Images/skyrim.jpg'],
+                        ];
+
+                        for (var img = 0; img < images.length; img++) {
+                            document.write('<div class="gallerySection3">');
+                            document.write('<div class="gallerySection2"> <div class="imgContainer" ></div>');
+                            document.write('<div class="gallerySection1">');
+                            document.write('<p>' + images[img][0] + '</p>');
+                            document.write('<p>' + images[img][1] + '</p>');
+                            document.write('<p id="likes'+img+'">' + images[img][2] + '</p>');
+                            document.write('<span><img src="../../Images/eye.png" alt="watches"></span> <span><img src="../../Images/clock.png" alt="time"></span> <span><img onclick="favorite('+img+')" id="heart' + img +'"src="../../Images/heart.png" alt="favorites"></span>');
+                            document.write('</div>');
+                            document.write('</div>');
+                            document.write('<p>' + images[img][3] + '</p>');
+                            document.write('<p class="softfont">' + images[img][4] + '</p>');
+                            document.write('</div>');
+                        }
+                        var numberOfPics = document.getElementsByClassName('imgContainer');
+                        for (var img = 0; img < numberOfPics.length; img++) { 
+                            numberOfPics[img].style['background-image'] = 'url(' + images[img][images[img].length - 1] + ')';
+                        }
+                    </script>
+                        <div id="galleryButton"><button>View More</button></div>
+                    </div>
+                </section>
+                <section id="fans">
+                    <h2>Testimonions</h2>
+                    <div id="person">
+
+                        <div id="prev" onclick="testimonion--; changeTestimonions();"><img src="../../Images/prev.png" alt="prev"></div>
+                        <div id="personImg"><img id="testimonionsImg" src="" alt="gamer"></div>
+                        <div id="next" onclick="testimonion++; changeTestimonions();"><img src="../../Images/next.png" alt="next"></div>
+
+                    </div>
+
+                    <div id="info">
+                        <p id="gamerName"></p>
+                        <p>Gamer</p>
+                        <p class='softfont'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolorum, dolor quam, cum ipsam sit neque
+                            aspernatur asperiores eveniet quaerat modi nihil a et nisi at perspiciatis odio facilis. Consequatur!</p>
+                    </div>
+                </section>
+                <section id="mail">
+                    <h2>Mail us</h2>
+                    <div id="form">
+                        <form action="">
+                            <div id="nameEmail">
+                                <div>
+                                    <div class='mailDivs' id="username" class='softfont'>
+                                        <label class='formlabel' for="">Your Name</label>
+                                        <input type="text" id="name" name="user_name" onfocus="focusInput(0)" onblur="blurInput(0)">
+                                    </div>
+                                    <div class='mailDivs' id="useremail" class='softfont'>
+                                        <label class='formlabel' for="">Your Email</label>
+                                        <input type="text" id="email" name="user_email" onfocus="focusInput(1)" onblur="blurInput(1)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='mailDivs' id="usermessage" class='softfont'>
+                                <label class='formlabel' for="">Your Message</label>
+                                <textarea name="user_message" id="message" cols="0" rows="0" onfocus="focusInput(2)" onblur="blurInput(2)"></textarea>
+                            </div>
+                            <div>
+                                <div id="mailButton">
+                                    <button type="submit">SEND</button>
+                                </div>
+                            </div>
+                        </form>
+                        <span>
+                        <a href="#mainPart"><img src="../../Images/upperarrow.png" alt="back to top"></a>
+                    </span>
+                    </div>
+                </section>
+                <section>
+                    <div id="map"></div>
+                    <script>
+                    function initMap() {
+                        var uluru = {lat: 42.743752, lng: 23.296616};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 15,
+                        center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                        });
+                    }
+                </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhUGhTgRkGct5mnOyyLHPuD3z0hrpgKwQ&callback=initMap">
+                </script>
+                </section>
+            </main>
+            <footer>
+                <section id="footer">
+                    <div>
+                        <div>
+                            <p class='softfont'>Games &copy; 2017 Privacy Policy</p>
+                        </div>
+                        <div>
+                            <p>Questions? Call Us Toll Free: (012) 123-456-7890</p>
+                        </div>
+                        <div id="social">
+                            <a href=""><img src="../../Images/Google+.png" alt="google+"></a>
+                            <a href=""><img src="../../Images/Pinterest.png" alt="pinterest"></a>
+                            <a href=""><img src="../../Images/Twitter.png" alt="twitter"></a>
+                            <a href=""><img src="../../Images/Facebook.png" alt="facebook"></a>
+                            <a href=""><img src="../../Images/Instagram.png" alt="instagram"></a>
+                        </div>
+                        <div>
+                            <a href="#mainPart"><img src="../../Images/upperarrow.png" alt="back to top"></a>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+
+            <div id="contactList">
+                <p>Contact us!</p>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

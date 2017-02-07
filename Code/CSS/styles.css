@@ -1,0 +1,767 @@
+/*****************
+    GENERAL
+*****************/
+html {
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    display: inline-block;
+    width: 100%;
+    background-image: url(../../Images/bg.jpg);   
+}
+
+#innerWrap {
+    background-image: url(../../Images/background.jpg);
+    background-size: 100%;
+}
+
+.softfont {
+    font-family: 'Playfair Display', serif;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*****************
+    HEADER
+*****************/
+
+#tabletPC {
+    display: none;
+}
+
+#mainPart {
+    background: #1b212c;
+}
+
+#phonemenu {
+    background: #505868;
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+#phonemenu img {
+    width: 20px;
+    float: left;
+    padding: 15px 5px 15px 15px;
+    cursor: pointer;
+}
+
+#phonemenu p {
+    font-size: 1.3em;
+    padding-top: 15px;
+}
+
+#sidemenu {
+    opacity: 0;
+    position: absolute;
+    float:left;
+    width: 0%;
+    background: #505868;
+    height: 100%;
+    z-index: 100;
+}
+
+#sidemenu ul{
+    height: 100%;
+}
+
+#sidemenu ul li {
+    padding: 35px 0 0 25px;
+}
+
+.sidemenulink{
+    color: white;
+    opacity: 0;
+    visibility: hidden;  
+}
+
+#sidemenu ul li div {
+    float: right;
+    width: 20px;
+    margin-right: 30px;
+    border: 1px solid #282b2F;
+    border-radius: 100%;
+    padding: 10px 5px;
+    background: #333944;
+}
+
+#sidemenu ul li div img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+#searchbar {
+    margin: auto;
+    width: 95%;
+}
+
+#searchbar form {
+    display: inline-block;
+    width: 100%;
+    margin: 5px auto;
+    position: relative;
+}
+
+#searchbar form input {
+    display: block;
+    box-sizing: border-box;
+    background-image: url(../../Images/search.png);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 18px;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    margin: 0;
+}
+
+#searchbar form span {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    top: 0;
+    
+}
+
+#mainPart h1 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+#tabletPC {
+    border-top: 3px solid #505868;
+    width: 100%;
+    position: relative;
+}
+
+#mainPart h1 {
+    font-size: 2.5em;
+}
+
+#flatmenu {
+    display: block;
+    text-align: center;
+}
+
+#flatmenu ul {
+    display: inline-block;
+    text-align: center;
+}
+
+#flatmenu ul li {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 30px 10px 0;
+}
+
+
+
+#flatmenu ul li a {
+    color: #868a9a;
+}
+
+#flatmenu ul li a:hover {
+    color: #c6cbe6;
+}
+
+
+
+.current {
+    color: white !important;
+}
+
+
+
+
+
+
+
+
+
+#searchPC {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 200px
+}
+
+#searchIcon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+#searchIcon div {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../Images/searchWhite.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+
+
+#searchInput {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+#searchInput form input {
+    width: 100%;
+    background-image: url(../../Images/search.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 98% 50%;
+    border: none;
+}
+
+#searchInput form span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+#secondNav {
+    padding: 30px 0;
+    background: #ae2e35;
+}
+
+#secondNav nav ul {
+    text-align: center;   
+}
+
+#secondNav nav ul li {
+    padding-top: 15px;
+}
+
+#secondNav nav ul li a {
+    padding-top: 15px;
+    color: white;
+}
+
+
+/*****************
+    MAIN
+*****************/
+
+#slideshow {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+#slideshow h2 {
+    font-size: 1.8em;
+    padding: 40px 0 30px 0;
+}
+
+#slideshow p {
+    padding-bottom: 70px;
+}
+
+#slideshow button {
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+#slideShowButton1 {
+    margin: 0 5px 5px 0;
+}
+
+#slides {
+    display: none;
+    position: absolute;       
+    bottom: 0px;
+    left: 33%;
+}
+
+#slide1, #slide2, #slide3 {
+    float: left;
+    width: 140px;
+    height: 120px;
+    position: relative;
+    cursor: pointer; 
+}
+
+
+.slidesImg {
+    bottom: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -20px;
+    transition: bottom 1s;  
+}
+
+.slidesImg:hover {
+    bottom: -5px !important;
+}
+
+
+#slide1 div {  
+    background-image: url(../../Images/mordhaupic.png);  
+}
+
+#slide2 div {
+    background-image: url(../../Images/masseffect.jpg);
+}
+
+#slide3 div {
+    background-image: url(../../Images/reddead.jpg);
+}
+
+
+
+
+
+
+#vids {
+    color: white;
+    text-align: center;
+}
+
+#vids h2 {
+    font-size: 1.8em;
+    padding: 40px 0px 30px;
+}
+
+#vids p {
+    padding: 10px 30px 80px;
+}
+
+
+
+#genre {
+    display: none;
+    width: 80%;
+    margin: auto;
+    padding-left: 30px;
+}
+
+#genre .genreList {
+    box-sizing: border-box;
+    margin: auto;
+    width: 50%;
+    float: left;
+    padding: 40px;
+}
+
+#genre .genreList label {
+    display: inline-block;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 5px;
+}
+
+#genre .genreList input {
+    display: none;
+}
+
+#genre input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: url(../../Images/notchecked.png) left top no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#genre input[type="checkbox"]:checked + label span {
+    background: url(../../Images/checked.png) left top no-repeat;
+    background-size: cover;
+}
+#genre div:last-child {
+    clear: both;
+    padding: 50px 0;
+}
+
+
+#genre div:last-child button {
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+#theGallery {
+    display: none;
+    color: white;
+    width: 100%;
+}
+
+#theGallery h2 {
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 80px;
+}
+
+
+.gallerySection2 {    
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    box-shadow: inset 0px -60px 20px 0px rgba(0,0,0,0.75);
+}
+
+.gallerySection2:hover .imgContainer,
+.gallerySection2:focus .imgContainer {
+    transform: scale(1.1);
+}
+
+
+
+.gallerySection3 {
+    float: left;
+    box-sizing: border-box;    
+    padding: 80px;
+    width: 50%;
+    height: 500px;
+}
+
+.gallerySection3>p {
+    text-align: center;
+    padding: 10px;
+}
+
+.gallerySection3>p:last-child {
+    color: #868a9a;
+}
+
+
+.gallerySection1 {
+    display: inline-block;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.gallerySection1 span, .gallerySection1 p {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.gallerySection1 img {
+    width: 20px;
+}
+
+
+.gallerySection1 span:last-child img {
+    cursor: pointer;
+}
+
+#theGallery button {
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+}
+
+#galleryButton {
+    text-align: center;
+    width: 50%;
+    clear: both;
+    margin: auto;
+}
+
+
+
+
+
+
+
+#fans {
+    display: none;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: #ae2e35;
+}
+
+
+#fans h2 {
+    font-size: 1.8em;
+    padding: 80px;
+}
+
+#person {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#person>div {
+    margin: 30px 70px;
+}
+
+#prev, #next {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30px;
+    cursor: pointer;
+}
+
+#personImg {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;   
+}
+
+#person div img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+#info p:first-child {
+    padding: 10px 0 5px;
+}
+
+#info p:last-child {
+    padding: 30px 70px;
+}
+
+
+
+
+
+
+
+
+#form {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+#mail {
+    color: #c6cbe6;  
+}
+
+#mail h2 {
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 100px 0 50px;  
+}
+
+#form * {
+    display: block;
+}
+
+
+.mailDivs {
+    padding-bottom: 100px;
+    position: relative;
+    width: 95%;
+    margin: auto;
+}
+
+
+#form input, #form textarea {
+    width: 100%;
+    padding-top: 10px;
+    border: none;
+    border-bottom: 2px solid #4b516d;
+    background: transparent;
+    color: white;
+}
+
+
+#form label {
+    position: absolute;
+    padding-left: 20px;
+    margin-top: -10px;
+}
+
+#form textarea {
+    height: 17px;
+}
+
+
+#mailButton {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#mailButton button {
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    color: #c6cbe6;
+    background: transparent;
+    border: 2px solid #4b516d;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+
+#form span {
+    display: none;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+
+#form span img {
+    width: 20px
+}
+
+
+
+#footer {
+    text-align: center;
+    background: #1b212c;
+    display: inline-block;
+    width: 100%;
+}
+
+#footer p:first-child {
+    padding: 60px 0 5px 0;
+    color: #868a9a;
+}
+
+#footer :nth-child(2) p {
+    color: white;
+    padding: 5px 0 10px 0;
+}
+
+#footer>div div:last-child img {
+    float: right;
+    padding: 0 30px 30px 0;
+}
+
+
+#footer img {
+    width: 20px;
+}
+
+
+#social {
+    padding-bottom: 20px;
+}
+
+
+#contactList {
+    color: white;
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    width: 200px;
+    background: skyblue;
+    display: inline-block;
+    font-size: 0.9em;
+    border-radius: 5px;
+    background-image: url(../../Images/contact.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 10px;
+
+}
+
+#contactList p {
+    float: left;
+    padding: 5px;
+}
+
+
+
+
+#map {
+    margin-top: 10px;
+    height: 400px;
+    width: 100%;
+}
+
+

@@ -1,0 +1,283 @@
+@media screen and (min-width: 750px) {
+
+    /*****************
+        HEADER
+    *****************/
+
+
+    #phone {
+        display: none;
+    }
+
+    #tabletPC {
+        display: inline-block;
+    }
+
+
+
+
+
+
+
+
+    #slideshow {
+        height: 500px;
+    }
+
+    #slideshow p {
+        padding-bottom: 120px;
+    }
+
+    #slideshow h2 {
+        padding-bottom: 80px;
+    }
+
+
+
+
+
+
+    #genre {
+        display: inline-block;
+        
+    }
+
+    #theGallery {
+        display: inline-block;
+    }
+
+    .gallerySection3 {
+        height: 600px;
+    }
+
+    #fans {
+        display: inline-block;
+    }
+
+    #form span {
+        display: inline-block;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1135px) { 
+
+
+    #tabletPC>div:first-child {
+        float: left;
+        padding-left: 20px;
+        width: 10%;
+        box-sizing: border-box;
+    }
+
+    #tabletPC h1 {
+        font-size: 3.0em;
+    }
+
+    #menuWrap {
+        float: left;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    #flatmenu {
+        display: block;
+        width: 80%;
+        text-align: right;      
+    }
+
+    #flatmenu ul {
+        display: inline-block;
+        text-align: center;
+        padding-top: 10px;  
+    }
+
+    #flatmenu ul li {
+        float: left;
+        box-sizing: border-box;
+        padding: 0 50px 10px 0;
+    }
+
+
+
+
+    /*#searchIcon {
+        right: 15%;
+        top: 5px;
+    }*/
+
+
+
+
+    #secondNav {
+        padding: 0;
+        text-align: center;
+    }
+
+    #secondNav nav ul {
+        text-align: center;   
+        display: inline-block;
+    }
+
+    #secondNav nav ul li {
+        float: left;
+        padding: 35px 50px;
+    }
+
+    #secondNav nav ul li a {
+        padding-top: 15px;
+        color: white;
+    }
+
+
+
+    #slideshow {
+        height: 700px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #slideshow p {
+        padding-bottom: 200px;
+        font-size: 1.5em;
+    }
+
+    #slideshow h2 {
+        padding-bottom: 100px;
+        font-size: 2.5em;
+    }
+
+    #slides {
+        display: inline-block;
+    }
+
+
+
+
+
+
+    #vids p {
+        padding: 10px 150px 80px;
+    }
+
+    #genre .genreList {
+        width: 25%;
+    }
+
+    
+
+    .gallerySection3 { 
+        padding: 30px;
+        padding-bottom: 100px;
+        width: 25%;
+        height: 500px;
+    }
+
+
+
+
+
+
+
+    .mailDivs {
+        padding-bottom: 100px;
+        position: relative;
+        width: 70%;
+        margin: auto;
+    }
+
+    #nameEmail {
+        width: 70%;
+        padding: 0 20px 150px;
+        margin: auto;
+        text-align: center;
+    }
+
+    
+
+    #nameEmail>div:first-child {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #username, #useremail {
+        float: left;
+        width: 50%;
+        margin: auto;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    #username {
+        padding-right: 20px;
+    }
+
+
+    #mailButton {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+
+
+
+    #footer>div {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+    }
+
+    #footer>div div {
+        float: left;
+        width: 33%;
+        box-sizing: border-box;
+        padding: 30px 0;
+    }
+
+    #footer p:first-child {
+        padding: 0;
+        color: #868a9a;
+    }
+
+    
+    #footer img {
+        width: 30px;
+    }
+
+
+    #footer>div div:last-child img {
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        width: 20px;
+    }
+
+    #footer>div div:last-child {
+        padding: 0;
+        margin: 0;
+        display: inline;
+    }
+
+
+
+    #map {
+     height: 500px;
+    }
+
+}
+
+
+@media screen and (min-width: 1190px) {     
+    #wrapper {
+        position: relative;
+    }
+
+    #innerWrap {
+        width: 1170px;
+        margin: auto;
+    }
+}
